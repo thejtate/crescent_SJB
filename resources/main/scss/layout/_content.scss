@@ -1,0 +1,28 @@
+.content-wrapper {
+  @include clearfix();
+
+  &.with-sidebar{
+
+    .block-system {
+      width: 590px;
+      margin-bottom: 90px;
+      float: left;
+    }
+
+    .sidebar{
+      display: block;
+    }
+  }
+
+  .block-system {
+    width: 100%;
+    margin-bottom: 90px;
+
+
+    p {
+      margin: 0 0 25px;
+    }
+  }
+
+
+}

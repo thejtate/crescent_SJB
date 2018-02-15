@@ -1,0 +1,58 @@
+.outer-wrapper {
+  overflow: hidden;
+  padding-bottom: 90px;
+
+  .media {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+
+  .media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-media {
+    height: 325px;
+    overflow: hidden;
+
+    &:before {
+      @include pseudo-block($left: 50%, $bottom: 51px);
+      display: block;
+      background: image-url('bg/water-slice.png');
+      @include transform(translate(-50%, 0));
+      height: 180px;
+      z-index: 2;
+      width: 100%;
+      background-size: 100% 230px;
+      min-width: 1000px;
+    }
+
+    h1 {
+      font-size:35px ;
+      top: 55px;
+      margin-top: -20px;
+    }
+
+    img {
+      width: 145%;
+      transform: translate(-50%, -13%);
+    }
+
+  }
+
+  .b-tabs-wrapper .flexslider, .b-tabs-wrapper .flex-viewport {
+    width: 290px;
+    margin: 0 auto;
+  }
+}
+
+.inner-wrapper {
+  z-index: 100;
+}
+

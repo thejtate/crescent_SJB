@@ -1,0 +1,111 @@
+.sidebar {
+  margin-bottom: 10px;
+  display: none;
+
+  h2 {
+    border-bottom: 5px solid #399459;
+    padding-bottom: 30px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 0 16px 0;
+      list-style: none;
+    }
+  }
+
+  .parent-mlid-429 > .menu > li > a {
+    line-height: 1.2;
+    font-family: sourcesanspro-bold;
+    margin: 15px 0;
+    font-size: 30px;
+    font-style: italic;
+    color: #3c3c3c;
+    padding: 0;
+  }
+
+  .menu {
+    @include clearfix();
+
+    li a {
+      padding-left: 50px;
+    }
+
+    .menu-mlid-616 {
+
+      ul li {
+
+        &:nth-child(1) a:before {
+          @include pseudo-block($top: -8px, $left: 0);
+          @include oneline-sprite-box($icons, brachure);
+        }
+
+        &:nth-child(2) a:before {
+          @include pseudo-block($top: -8px, $left: 0);
+          @include oneline-sprite-box($icons, pdf-icon);
+        }
+      }
+    }
+
+    .menu-mlid-619 {
+
+      ul li {
+
+        &:nth-child(1) a:before {
+          @include pseudo-block($top: 6px, $left: -7px);
+          @include oneline-sprite-box($icons, products-tab-1-a-m);
+        }
+
+        &:nth-child(2) a:before {
+          @include pseudo-block($top: 6px, $left: -7px);
+          @include oneline-sprite-box($icons, products-tab-2-a-m);
+        }
+      }
+    }
+
+    .hd {
+      padding-bottom: 8px;
+      font-weight: bold;
+      margin-bottom: 24px;
+      font-family: $avenir-ultra-light-italic;
+    }
+
+    h3 {
+      line-height: 1.2;
+      font-family: $avenir-bold;
+      margin: 15px 0;
+      font-size: 30px;
+      font-style: italic;
+
+      a {
+        color: #3c3c3c;
+        font-size: 30px;
+      }
+    }
+
+    a {
+      color: #7d7d7d;
+      @include transition(opacity .3s);
+      text-decoration: none;
+      font-size: 22px;
+      position: relative;
+      display: inline-block;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    img {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+}

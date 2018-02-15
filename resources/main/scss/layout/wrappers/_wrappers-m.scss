@@ -1,0 +1,22 @@
+.outer-wrapper {
+  overflow: hidden;
+  padding-bottom: 90px;
+
+  .top-media {
+
+    h1 {
+      font-size: 65px;
+      top: 100px;
+    }
+  }
+
+  .b-tabs-wrapper .flexslider, .b-tabs-wrapper .flex-viewport {
+    width: 522px;
+    margin: 0 auto;
+  }
+}
+
+.inner-wrapper {
+  z-index: 100;
+}
+

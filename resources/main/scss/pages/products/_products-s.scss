@@ -1,0 +1,194 @@
+.page-products {
+
+  h5 {
+    margin: 20px 0 20px 0;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: museo-300;
+    text-align: center;
+    color: #818181;
+    text-transform: uppercase;
+  }
+
+  .quicktabs-tabpage .text-slider {
+
+    .right-part {
+      display: block;
+    }
+
+    & > .text-inner {
+      @include clear-box();
+      padding-top: 45px;
+
+      h6 {
+        font-family: $avenir-bold;
+        text-transform: none;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .left-part img {
+    width: 100%;
+  }
+
+  .quicktabs-tabpage .right-part {
+    max-width: 450px;
+    margin: 0 auto;
+    display: none;
+
+    .flexslider .slides > li {
+      max-height: 165px;
+    }
+  }
+
+  .title-nav {
+
+    #quicktabs-tab-water_services-0:before {
+      @include pseudo-block($top: 14px, $left: 16px);
+      @include oneline-sprite-box($icons, products-tab-1-a-s);
+    }
+
+    #quicktabs-tab-water_services-1:before {
+      @include pseudo-block($top: 14px, $left: 16px);
+      @include oneline-sprite-box($icons, products-tab-2-a-s);
+    }
+  }
+
+  .text-inner {
+    width: 100%;
+    margin: 0 auto;
+
+    .left-part {
+      width: 310px;
+      margin: 0 auto 20px;
+    }
+
+    .twentytwenty-container, .twentytwenty-wrapper {
+      width: 310px;
+      height: 413px !important;
+    }
+
+    .products-list {
+      margin: 0;
+      padding: 0 0 0 40px;
+
+      li {
+        list-style: none;
+        position: relative;
+        margin-bottom: 25px;
+
+        &:before {
+          @include pseudo-block($top: -7px, $left: -42px);
+          @include oneline-sprite-box($icons, products-tab-1-a-s)
+        }
+      }
+    }
+
+    .app-list {
+
+      li {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  h6 {
+    font-size: 24px;
+    text-align: center;
+    color: #7d7d7d;
+    margin: 0 0 40px 0;
+  }
+
+  .img {
+    text-align: center;
+    padding: 70px 0 40px 0;
+
+    a {
+      display: inline-block;
+      margin: 0;
+    }
+
+    &.img-two {
+
+      a {
+        width: 45%;
+        margin-left: 15px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.img-three {
+
+      a {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-bottom: 8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    img {
+      display: inline-block;
+    }
+  }
+
+  .quicktabs-wrapper {
+
+    .quicktabs-tabs {
+      padding: 0px 25px 0 25px;
+
+      li {
+        padding: 10px 40px 10px 45px;
+
+        a {
+          &:after {
+            @include pseudo-block($bottom: 4px, $left: -8px);
+          }
+        }
+      }
+
+      .quicktabs-tabs-item-1 {
+
+        a {
+          &:after {
+            @include oneline-sprite-box($icons, products-tab-1-s);
+          }
+        }
+      }
+
+      .quicktabs-tabs-item-2 {
+
+        a {
+          &:after {
+            @include oneline-sprite-box($icons, products-tab-2-s);
+          }
+        }
+      }
+
+    }
+  }
+}
